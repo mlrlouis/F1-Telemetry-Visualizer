@@ -1,4 +1,4 @@
-package main.java.com.apex.core.structures;
+package com.apex.core.structures;
 
 import java.util.NoSuchElementException;
 
