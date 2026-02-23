@@ -73,8 +73,27 @@ public class TrackSection {
 		return Objects.equals(id, other.id);
 	}
 
+	/*
+	@Override
 	public String toString() {
-		return "id: " + getId() + ", name: " + getName() + ", length: " + getLength() + ", type: " + getType()
-				+ ", difficulty: " + getDifficulty() + ", baseWearFactor: " + getBaseWearFactor();
+		return "TrackSection [id=" + id + ", name=" + name + ", length=" + length + ", type=" + type + ", difficulty="
+				+ difficulty + ", baseWearFactor=" + baseWearFactor + "]";
+	}
+	*/
+	
+	// Alternative:
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("TrackSection [id=").append(id)
+		  .append(", name=").append(name)
+		  .append(", length=").append(length)
+		  .append(", type=").append(type)
+		  .append(", difficulty=").append(difficulty)
+		  .append(", baseWearFactor=").append(baseWearFactor)
+		  .append("]");
+		
+		return sb.toString();
 	}
 }
